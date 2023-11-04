@@ -26,8 +26,6 @@ hbs.registerPartials(partials_path);
 app.get("/" , (req, res) => {
     res.render("index");
 });
-
-
 app.get("/register", (req,res) => {
     res.render("register");
 })
@@ -38,9 +36,10 @@ app.get("/timeline", (req,res) => {
 
 app.post("/register", async (req,res) => {
    try {
+
     const registerAdmin = new Register({
         name : req.body.name,
-        phone:req.body.phone,
+        email:req.body.email,
         password:req.body.password
 
     })
@@ -52,8 +51,6 @@ app.post("/register", async (req,res) => {
      res.status(400).send(error);
    }
 })
-
-
 
 app.listen(port, () => {
     console.log(`server is running at port number ${port}`);

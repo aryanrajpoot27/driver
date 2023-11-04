@@ -22,6 +22,8 @@
   padding: 5rem 1rem;
 }
 
+
+
 .section__header {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -68,7 +70,7 @@ body {
 
 header {
   background-image: linear-gradient(to top, var(--primary-color), transparent),
-    url("assets/truck.jpg");
+    url("/assets/truck.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
