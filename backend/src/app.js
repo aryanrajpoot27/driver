@@ -33,6 +33,9 @@ app.get("/register", (req,res) => {
 app.get("/timeline", (req,res) => {
     res.render("timeline");
 })
+app.get("/adminpanel", (req,res) => {
+    res.render("adminpanel");
+})
 
 app.post("/register", async (req,res) => {
    try {
@@ -61,7 +64,7 @@ app.post("/login", async (req,res) => {
        const useremail =  await Register.findOne({email:email})
        
        if(useremail.password === password){
-        res.status(201).render("index");
+        res.status(201).render("adminpanel");
        }
        else{
         res.send("Invalid Login Details")
