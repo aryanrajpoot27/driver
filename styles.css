@@ -201,7 +201,7 @@ nav {
   text-align: center;
   font-size: 12rem;
   font-weight: 700;
-  background-image: url("assets/banner.jpg");
+  background-image: url("/assets/highway.webp");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--extra-light);
